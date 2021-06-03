@@ -71,7 +71,7 @@ The API should implement the following:
     }
 	-Response: Token will be returned in the Response Header
 	(x-auth)
-●Request to change user first or last name with authenticationand verification
+●Request to logout
 
     -Method: POST
     -Route URL: http://localhost:9091/api/auth/logout
@@ -79,14 +79,14 @@ The API should implement the following:
     
 
 
-●Store authenticated user customer support ticket bystoring (User ID, Message)
+●Store authenticated user 
 
     -Method: GET
     -Route URL: http://localhost:9091/api/bank/statements
     -Header: Pass JWT token in Request header with the key Authorization
     -Request Body: None
 
-●Admin user request to list customer support tickets (by default it will fetch first 10 records)
+●Admin user request to list Statements (in case of all params are null return last three months only in case of admin )
 
     -Method: GET
     -Route URL: localhost:9091/api/bank/statements?accountId=1&fromDate=05.07.2018&toDate=15.11.2020&fromAmount=166.470541608144&toAmount=386.908121686113
