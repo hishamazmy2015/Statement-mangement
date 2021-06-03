@@ -1,0 +1,29 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: bank-statement
+  ##### Datasource Configuration #####
+  datasource:
+    driver-class-name: net.ucanaccess.jdbc.UcanaccessDriver
+    url: jdbc:ucanaccess://E:/DIR/accountsdb.accdb;openExclusive=false;ignoreCase=true
+#    url: jdbc:ucanaccess://E:/accountsdb.accdb;openExclusive=false;ignoreCase=true
+
+
+###### session configuration ######
+session:
+  expiration: 864000000 #10 days
+jwt:
+  expiration:
+    time: 300000  #5 Min only
+###### token configuration ######
+token:
+  secret: jf9i4jgu83nfl0jfu57ejf7
+  prefix: Bearer
+header:
+  authorization: Authorization
+
+
+#  account-statement: e74b8bd54744f05313c5986658d417cff6f94061
+
+#  mvn sonar:sonar  -Dsonar.projectKey=account-statement   -Dsonar.host.url=http://localhost:9000   -Dsonar.login=e74b8bd54744f05313c5986658d417cff6f94061
