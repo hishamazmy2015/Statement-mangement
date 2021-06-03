@@ -1,19 +1,35 @@
 
 
-# Boilerplate
+# This applicaion performs some filtering in how to retrieve the user statements based on some criteria like:
+### bank account id
+### date range
+### amount range
 
-# JWT Token will be returned in the Response Header with the key "x-auth"
+# Technologies used:
+java 1.8
+spring boot 
+spring security
+json web token (jwt)
+spring aop for logging
+Installation guidance
+The first step is to take the db (accoundb.accdb) from application folder and paste it into your local drive and then point to it in application.yml and then in the root folder 
+
+
+
+
+
+
+# JWT Token will be returned in the Response Header with the key "Authoirzation"
 ## How To Run
 1) Clone the project in your local directory
-    git clone https://github.com/syednoor1995/Assignment.git
-2) Open the project in VS Code
-3) Install all the necassary dependency by using (npm install) command in terminal.
-4) Run the Server by using (npm start) command in terminal.
+    git clone https://github.com/hishamazmy2015/Statement-mangement.git
+2) Open the project in Intellija
+
 
     
 ### PostMan collection URL
-You can simply import the collections also by using the link below
-https://www.getpostman.com/collections/fa0edab71b63fed622e2
+You can simply import the collections attached with Project.
+
 
 Steps:
 1) open postman
@@ -25,7 +41,8 @@ Note for POSTMAN ENV:
 
 
 #### How to run Test Case
-    -Run this command (npm test)
+    -mvn clean install
+    -mvn spring-boot:run
     
 ##### Assignment detail description
 The API should implement the following:
@@ -34,66 +51,46 @@ The API should implement the following:
   User can be able to signup as a Admin OR User.
   
     -Method: POST
-    -Route URL: http://localhost:4041/api/user/signup
+    -Route URL: http://localhost:9091/api/user/signup
     -Request Body:
     {
-    "name": {
-        "firstName": "syed",
-        "lastName": "noor"
-    },
-    "email": "noorraza377@gmail.com",
-    "password": "hello",
-    "role": "user"
+     
+        "username": "user",
+        "password": "user"
     }
 	-Response: Token will be returned in the Response Header
 	(x-auth)	
 ●User sign in with JWT tokens
 
     -Method: POST
-    -Route URL: http://localhost:4041/api/user/login
+    -Route URL: http://localhost:9091/api/auth/login
     -Request Body:
     {
-    "email": "noorraza377@gmail.com",
-    "password": "hello"
+         "username": "admin",
+        "password": "admin"
     }
 	-Response: Token will be returned in the Response Header
 	(x-auth)
 ●Request to change user first or last name with authenticationand verification
 
-    -Method: PUT
-    -Route URL: http://localhost:4041/api/user/profile
+    -Method: POST
+    -Route URL: http://localhost:9091/api/auth/logout
     -Header: Pass JWT token in Request header with the key Authorization
-    -Request Body:
-    {
-    "name": {
-        "firstName": "syedaa12",
-        "lastName": "noora"
-    }
-    }
+    
+
+
 ●Store authenticated user customer support ticket bystoring (User ID, Message)
 
-    -Method: PUT
-    -Route URL: http://localhost:4041/api/ticket
+    -Method: GET
+    -Route URL: http://localhost:9091/api/bank/statements
     -Header: Pass JWT token in Request header with the key Authorization
-    -Request Body:
-    {
-    "name": {
-        "firstName": "syedaa12",
-        "lastName": "noora"
-    }
-    }
+    -Request Body: None
+
 ●Admin user request to list customer support tickets (by default it will fetch first 10 records)
 
     -Method: GET
-    -Route URL: http://localhost:4041/api/ticket
+    -Route URL: localhost:9091/api/bank/statements?accountId=1&fromDate=05.07.2018&toDate=15.11.2020&fromAmount=166.470541608144&toAmount=386.908121686113
     -Header: Pass JWT token in Request header with the key Authorization
     -Request Body:None
     -Response: Returns an array of customer support tickets
     
-●Admin user request to list customer support tickets (with pagination)
-
-    -Method: GET
-    -Route URL: http://localhost:4041/api/ticket?limit=30&page=1
-    -Header: Pass JWT token in Request header with the key Authorization
-    -Request Body:None
-    -Response: Returns an array of customer support tickets
