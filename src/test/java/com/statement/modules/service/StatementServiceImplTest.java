@@ -65,11 +65,11 @@ public class StatementServiceImplTest {
         Statement statement3 = new Statement(3L, 3L, "16.07.2020", "320.113318991709");
         Statement statement4 = new Statement(4L, 4L, "05.11.2020", "546.183713080865");
         Statement statement5 = new Statement(5L, 5L, "18.12.2012", "160.447345398501");
-        statements = Arrays.asList(statement1, statement2, statement3, statement4, statement5);
+//        statements = Arrays.asList(statement1, statement2, statement3, statement4, statement5);
 
-        doReturn(Arrays.asList(statement1, statement2, statement3, statement4, statement5)).when(myRepository).getAllByFilterArgs();
+//        doReturn(Arrays.asList(statement1, statement2, statement3, statement4, statement5)).when(myRepository).getAllByFilterArgs();
 
-        statements = Arrays.asList(statement1, statement2, statement3, statement4, statement5);
+//        statements = Arrays.asList(statement1, statement2, statement3, statement4, statement5);
 
         StatementServiceImpl statementService = new StatementServiceImpl(statementRepository, handleUtilityService);
 

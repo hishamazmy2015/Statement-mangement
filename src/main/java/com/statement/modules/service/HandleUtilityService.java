@@ -65,14 +65,19 @@ public class HandleUtilityService {
 
     public List<StatementsDto> mapListToDTO(List<Statement> statements) {
         List<StatementsDto> StatementsDtos = new ArrayList<>();
-        statements.stream().parallel().forEach(statement -> {
-            StatementsDto StatementsDto = new StatementsDto();
-            StatementsDto.setAccountId(bCryptPasswordEncoder.encode(String.valueOf(statement.getAccountId())));
-            StatementsDto.setAmount(new BigDecimal(statement.getAmount()));
-            StatementsDto.setId(statement.getId());
-            StatementsDto.setDatefield(this.stringToDate(statement.getDatefield()));
-            StatementsDtos.add(StatementsDto);
-        });
+        try {
+            statements.stream().parallel().forEach(statement -> {
+                StatementsDto StatementsDto = new StatementsDto();
+                StatementsDto.setAccountId(bCryptPasswordEncoder.encode(String.valueOf(statement.getAccountId())));
+                StatementsDto.setAmount(new BigDecimal(statement.getAmount()));
+                StatementsDto.setId(statement.getId());
+                StatementsDto.setDatefield(this.stringToDate(statement.getDatefield()));
+                StatementsDtos.add(StatementsDto);
+            });
+        } catch (ArrayIndexOutOfBoundsException ex) {
+            log.error("<======== Out of Range  ======>", ex);
+        }
+
         return StatementsDtos;
     }
 

@@ -52,7 +52,6 @@ public class BankStatementController {
              * Inside Admin
              *
              * */
-            System.out.println("Last Three Month " + statementsService.getStatments(accountId, fromDate, toDate, fromAmount, toAmount));
             return status(HttpStatus.OK).body(statementsService.getStatments(accountId, fromDate, toDate, fromAmount, toAmount));
         } else {
             /**
@@ -65,7 +64,6 @@ public class BankStatementController {
                 return new ResponseEntity<>("You are not Authorized to filter By Args ", HttpStatus.UNAUTHORIZED);
 
 
-            System.out.println("Last Three Month " + statementsService.getStatments(accountId, fromDate, toDate, fromAmount, toAmount));
             return status(HttpStatus.OK).body(statementsService.getStatments(accountId, fromDate, toDate, fromAmount, toAmount));
         }
     }
