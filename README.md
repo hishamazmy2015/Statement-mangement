@@ -94,3 +94,22 @@ The API should implement the following:
     -Request Body:None
     -Response: Returns an array of customer support tickets
     
+    
+## Resources of Rest API Handle Exception
+https://www.toptal.com/java/spring-boot-rest-api-error-handling
+
+
+    
+## Resources of Testing
+https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testing
+
+
+## Resources of sonarscanner
+https://medium.com/swlh/sonarqube-sonarscanner-setup-1a633b654828
+
+
+![Capture](https://user-images.githubusercontent.com/12899500/120700577-e0412f80-c4c2-11eb-99ba-b6c5b2f096e7.PNG)
+
+
+
+    
