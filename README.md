@@ -19,7 +19,7 @@ The first step is to take the db (accoundb.accdb) from application folder and pa
 
 
 
-# JWT Token will be returned in the Response Header with the key "x-auth"
+# JWT Token will be returned in the Response Header with the key "Authoirzation"
 ## How To Run
 1) Clone the project in your local directory
     git clone https://github.com/hishamazmy2015/Statement-mangement.git
