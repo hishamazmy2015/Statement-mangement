@@ -1,0 +1,269 @@
+{
+	"id": "9f088fb9-6ac3-df2e-738a-c870a4f254d5",
+	"name": "nagaro",
+	"description": "",
+	"order": [
+		"f8197773-07b7-0671-109a-e029bc7e4bcf",
+		"3dc89c5e-c03b-b3c7-b9c5-d2e1d21ba7ae",
+		"c3992076-ffeb-4199-0abd-eeb332a3778c",
+		"ba339787-4c1d-4804-baad-0d1302fd90b2",
+		"fc8a548b-401b-0b2e-4283-2c62572b82ba",
+		"ea972b9d-e1c1-fa32-bb0f-f990b472e53a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1622734145886,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3dc89c5e-c03b-b3c7-b9c5-d2e1d21ba7ae",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9090/api/auth/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9f088fb9-6ac3-df2e-738a-c870a4f254d5",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:9090/users/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622734317933,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n     \"username\":\"admin\",\n     \"password\":\"admin\"\n}"
+		},
+		{
+			"id": "ba339787-4c1d-4804-baad-0d1302fd90b2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9090/api/auth/signup",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9f088fb9-6ac3-df2e-738a-c870a4f254d5",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:9090/api/auth/signup",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622734356157,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "   {\r\n   \t \"ID\":\"1\",\r\n     \"username\":\"user\",\r\n     \"password\":\"user\",\r\n     \"role\":\"user\"\r\n   }\r\n    \r\n    \r\n\r\n    \r\n\r\n\r\n    "
+		},
+		{
+			"id": "c3992076-ffeb-4199-0abd-eeb332a3778c",
+			"headers": "Authorization: eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjIyNzI2MTIwfQ.VA-oiWN7hCjEsJcnuSgjcCUr7e2JUKjdSq5gGtjZVUa5c8BpwfoEEe6pHdjg8W7AWl5B54f6Six4h9JPF3q93E3X0NaBRz5Z8u7HCq9RbikaJ1yyrr6l47k8oe69aW8lLxA4jCWnQXgPXfDgATLvAR7m89SSIQ-f1xSmMCBB-TyHS3yFqhl1_P4cMXoSdmfudf1WI6o1SjA09fQMUp6CQLHzM6TITtXbwKoTqYwep_dh3NVqlvGrtdPpJaOwpvjRQd8WaZu60yJygOmRBaigy4z1Nv2FJWKui3_7yhRNK-k6GwFUy1Kcm-9rGJrWVzkWoYrqVIYPh6KOJ23v4dWDQg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjIyNzI2MTIwfQ.VA-oiWN7hCjEsJcnuSgjcCUr7e2JUKjdSq5gGtjZVUa5c8BpwfoEEe6pHdjg8W7AWl5B54f6Six4h9JPF3q93E3X0NaBRz5Z8u7HCq9RbikaJ1yyrr6l47k8oe69aW8lLxA4jCWnQXgPXfDgATLvAR7m89SSIQ-f1xSmMCBB-TyHS3yFqhl1_P4cMXoSdmfudf1WI6o1SjA09fQMUp6CQLHzM6TITtXbwKoTqYwep_dh3NVqlvGrtdPpJaOwpvjRQd8WaZu60yJygOmRBaigy4z1Nv2FJWKui3_7yhRNK-k6GwFUy1Kcm-9rGJrWVzkWoYrqVIYPh6KOJ23v4dWDQg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9090/api/auth/logout",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9f088fb9-6ac3-df2e-738a-c870a4f254d5",
+			"data": [
+				{
+					"key": "Authorization",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "localhost:9090/api/auth/logout",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622734331458,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ea972b9d-e1c1-fa32-bb0f-f990b472e53a",
+			"headers": "//accountId: 151\n//fromDate: \nAuthorization: eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyMjczNjcwNH0.V5BVocX5HmzyVMjN-O7wVzE7XgIw9A0vO0Fgy3jsRt7YQtTwlG8aKGNjtcI2S0JVez6QX5L1wAQo0PxXA_Q7MCl1UFuCM6CFS3Zhpx5dXtdNcWrmcEimxMLquQHW2OGFLuTSMVtaL8iqFm-bWspt9MIdzZtaRkosoV95jBI5R0FSOVRgzZVtfbK6FZDHzXydlJdKIfpnvsV9J0ndqAHXuCqVaZDtvcgFlssV-zHEr3u8PcaPgapqIGS8-nFv1mNAuoE6yBIIw60TeiIcENHpX3FD8-HTkJVwEmaSuew4tk2oE6A4BtBDnczYCrv5Db1WBqq2wlHIWe6xqYEwK6GI4Q\n",
+			"headerData": [
+				{
+					"key": "accountId",
+					"value": "151",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "fromDate",
+					"value": "",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyMjczNjcwNH0.V5BVocX5HmzyVMjN-O7wVzE7XgIw9A0vO0Fgy3jsRt7YQtTwlG8aKGNjtcI2S0JVez6QX5L1wAQo0PxXA_Q7MCl1UFuCM6CFS3Zhpx5dXtdNcWrmcEimxMLquQHW2OGFLuTSMVtaL8iqFm-bWspt9MIdzZtaRkosoV95jBI5R0FSOVRgzZVtfbK6FZDHzXydlJdKIfpnvsV9J0ndqAHXuCqVaZDtvcgFlssV-zHEr3u8PcaPgapqIGS8-nFv1mNAuoE6yBIIw60TeiIcENHpX3FD8-HTkJVwEmaSuew4tk2oE6A4BtBDnczYCrv5Db1WBqq2wlHIWe6xqYEwK6GI4Q",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9090/api/bank/statements?accountId=1&fromDate=05.07.2018&toDate=15.11.2020&fromAmount=166.470541608144&toAmount=386.908121686113",
+			"queryParams": [
+				{
+					"key": "accountId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "fromDate",
+					"value": "05.07.2018",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "toDate",
+					"value": "15.11.2020",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "fromAmount",
+					"value": "166.470541608144",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "toAmount",
+					"value": "386.908121686113",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9f088fb9-6ac3-df2e-738a-c870a4f254d5",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:9090/api/bank/statements",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622736358773,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f8197773-07b7-0671-109a-e029bc7e4bcf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9090/api/auth/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622734310314,
+			"name": "localhost:9090/users/login",
+			"description": "",
+			"collectionId": "9f088fb9-6ac3-df2e-738a-c870a4f254d5",
+			"responses": [],
+			"rawModeData": "{\n\t\n     \"username\":\"admin\",\n     \"password\":\"admin\"\n}"
+		},
+		{
+			"id": "fc8a548b-401b-0b2e-4283-2c62572b82ba",
+			"headers": "//accountId: 151\n//fromDate: \nAuthorization: eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyMjczNjcwNH0.V5BVocX5HmzyVMjN-O7wVzE7XgIw9A0vO0Fgy3jsRt7YQtTwlG8aKGNjtcI2S0JVez6QX5L1wAQo0PxXA_Q7MCl1UFuCM6CFS3Zhpx5dXtdNcWrmcEimxMLquQHW2OGFLuTSMVtaL8iqFm-bWspt9MIdzZtaRkosoV95jBI5R0FSOVRgzZVtfbK6FZDHzXydlJdKIfpnvsV9J0ndqAHXuCqVaZDtvcgFlssV-zHEr3u8PcaPgapqIGS8-nFv1mNAuoE6yBIIw60TeiIcENHpX3FD8-HTkJVwEmaSuew4tk2oE6A4BtBDnczYCrv5Db1WBqq2wlHIWe6xqYEwK6GI4Q\n",
+			"headerData": [
+				{
+					"key": "accountId",
+					"value": "151",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "fromDate",
+					"value": "",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYyMjczNjcwNH0.V5BVocX5HmzyVMjN-O7wVzE7XgIw9A0vO0Fgy3jsRt7YQtTwlG8aKGNjtcI2S0JVez6QX5L1wAQo0PxXA_Q7MCl1UFuCM6CFS3Zhpx5dXtdNcWrmcEimxMLquQHW2OGFLuTSMVtaL8iqFm-bWspt9MIdzZtaRkosoV95jBI5R0FSOVRgzZVtfbK6FZDHzXydlJdKIfpnvsV9J0ndqAHXuCqVaZDtvcgFlssV-zHEr3u8PcaPgapqIGS8-nFv1mNAuoE6yBIIw60TeiIcENHpX3FD8-HTkJVwEmaSuew4tk2oE6A4BtBDnczYCrv5Db1WBqq2wlHIWe6xqYEwK6GI4Q",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9090/api/bank/statements",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9f088fb9-6ac3-df2e-738a-c870a4f254d5",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:9090/api/bank/statements",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1622734374854,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
