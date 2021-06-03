@@ -20,12 +20,8 @@ import java.util.stream.Collectors;
 @Component
 @Slf4j
 public class StatementServiceImpl implements StatementService {
-    @Autowired
     private StatementsRepository statementRepository;
-    @Autowired
     private HandleUtilityService handleUtilityService;
-    @Autowired
-    private UserService userService;
 
 
     /**

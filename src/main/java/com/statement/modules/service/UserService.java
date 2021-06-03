@@ -9,17 +9,17 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Service
-@AllArgsConstructor
-@Transactional
+//@Service
+//@AllArgsConstructor
+//@Transactional
 public class UserService {
 
-    private final UserRepository userRepository;
-    private final AuthService authService;
-
-    public List<User> getAllUsers() {
-        return (List<User>) userRepository.findAll();
-    }
+//    private final UserRepository userRepository;
+//    private final AuthService authService;
+//
+//    public List<User> getAllUsers() {
+//        return (List<User>) userRepository.findAll();
+//    }
 
 
 
